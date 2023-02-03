@@ -20,7 +20,7 @@ public class Cache {
      * @throws IOException
      */
     public static String ConsultaPelicula(String pelicula) throws IOException{
-        if(peliculas.contains(pelicula)){
+        if(peliculas.containsKey(pelicula)){
             return peliculas.get(pelicula);
         }else{
             String response = HttpConnectionExample.Api(pelicula);

@@ -73,8 +73,8 @@ public class AppTest extends TestCase{
         Cache.peliculas.clear();
         ArrayList<ThreadsTest> threadsTests = new ArrayList<>();
         threadsTests.add(new ThreadsTest("Indiana"));
-        threadsTests.add(new ThreadsTest("up"));
         threadsTests.add(new ThreadsTest("Indiana"));
+        threadsTests.add(new ThreadsTest("up"));
         threadsTests.add(new ThreadsTest("up"));
         threadsTests.add(new ThreadsTest("Indiana"));
 
@@ -89,6 +89,6 @@ public class AppTest extends TestCase{
             }
         }
 
-        assertEquals(1, Cache.peliculas.size());
+        assertEquals(2, Cache.peliculas.size());
     }
 }
